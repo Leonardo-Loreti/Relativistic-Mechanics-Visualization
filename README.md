@@ -10,6 +10,8 @@ The left image represents the movement of a particle as seen from the stationary
 
 Well, I'm not a professional programmer, but I'd like to be. So I'm trying to implement some applicantions using Python.
 
-### Nest steps?
+### Next steps?
 
-Maybe I'll try to turn this program in a real executable software, so I'll have to learn how to make a GUI. Also, I could implement this algorithm in a website, probably using javascript (I'm learning web development).
+Maybe I'll try to turn this program in a real executable software, so I'll have to learn how to make a GUI. Also, I could implement this algorithm in a website, probably using javascript (I'm learning web development).[^1]
+
+[^1]:If you see something wrong please tell me, I'm not a physicist yet, neither a professional programmer 😅
