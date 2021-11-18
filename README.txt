@@ -1,0 +1,1 @@
+The idea of this program is to visualize the length dillation effect as seen from a moving inertial frame of reference. This can be done if we compare the evolution in time of the positions calculated by galileo's velocity addition law, wich governs Newton's mechanics, with the relativistic addition velocity law. To compare, we'll plot 3D graphs.

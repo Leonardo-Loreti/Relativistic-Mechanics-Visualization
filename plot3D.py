@@ -1,27 +1,32 @@
-import matplotlib.pylab as plt
-
+import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
 from numpy import loadtxt
-'''from mpl_toolkits.mplot3d import Axes3D'''
+
 fig = plt.figure()
-ax = plt.axes(projection="3d")
-'''
-SPositions = loadtxt('S_Positions.txt', float)
+ax = fig.add_subplot(1, 2, 1, projection='3d')
 
-x = SPositions[:,0]
-y = SPositions[:,1]
-z = SPositions[:,2]
+S = loadtxt('S_Positions.txt', float)
 
-ax.plot3D(x, y, z, 'gray')
+x = S[:,0]
+y = S[:,1]
+z = S[:,2]
 
-plt.show()
-'''
-SPrimePositions = loadtxt('SPrimeNewton_Positions.txt', float)
+ax.plot3D(x, y, z, 'green')
+
+ax = fig.add_subplot(1, 2, 2, projection='3d')
+
+SNewton = loadtxt('SNewton_Positions.txt', float)
+SPrimePositions = loadtxt('SPrime_Positions.txt', float)
+
+xNewton = SNewton[:,0]
+yNewton = SNewton[:,1]
+zNewton = SNewton[:,2]
 
 xPrime = SPrimePositions[:,0]
 yPrime = SPrimePositions[:,1]
 zPrime = SPrimePositions[:,2]
 
-ax.plot3D(xPrime, yPrime, zPrime, 'blue')
+ax.plot3D(xNewton, yNewton, zNewton, 'blue')
+ax.plot3D(xPrime, yPrime, zPrime, 'red')
 
 plt.show()
